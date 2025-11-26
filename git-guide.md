@@ -34,7 +34,7 @@ touch main.py
 echo print("HELLO WORLD") >> main.py
 
 # Проверить содержимое
-cat main.py
+notepad main.py
 ```
 
 ### 4. Добавление изменений в staging area
@@ -196,3 +196,4 @@ git remote add origin https://github.com/АККАУНТ/РЕПОЗИТОРИЙ.g
 - Решать типичные проблемы
 
 Happy coding! 🚀
+
