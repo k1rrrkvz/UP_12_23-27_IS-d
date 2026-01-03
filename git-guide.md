@@ -86,7 +86,15 @@ git push -u origin master
 # Последующие отправки
 git push origin master
 ```
+## Дополнительная информация:
+### Для переименовывания локальной ветки в main:
+```bash
+# Переименовываем ветку master в main
+git branch -M main
 
+# Теперь пушим ветку main
+git push -u origin main
+```
 ---
 
 ## 🔄 ПОЛНЫЙ ЦИКЛ РАЗРАБОТКИ
@@ -196,5 +204,6 @@ git remote add origin https://github.com/АККАУНТ/РЕПОЗИТОРИЙ.g
 - Решать типичные проблемы
 
 Happy coding! 🚀
+
 
 
