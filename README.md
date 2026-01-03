@@ -1,5 +1,7 @@
 # UP_12_23-27_IS-d
 
+### Изучите работу с GIT: [git-guide.md](https://github.com/k1rrrkvz/UP_12_23-27_IS-d/blob/main/git-guide.md)
+
 ### Шаг 1.
 - Изучить содержимое из файла [t1.md](https://github.com/k1rrrkvz/UP_12_23-27_IS-d/blob/main/t1.md)
 
