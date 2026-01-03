@@ -81,10 +81,10 @@ git remote -v
 ### 8. Первая отправка кода на GitHub
 ```bash
 # Отправить код (первый раз)
-git push -u origin main
+git push -u origin master
 
 # Последующие отправки
-git push origin main
+git push origin master
 ```
 
 ---
@@ -196,4 +196,5 @@ git remote add origin https://github.com/АККАУНТ/РЕПОЗИТОРИЙ.g
 - Решать типичные проблемы
 
 Happy coding! 🚀
+
 
