@@ -32,8 +32,8 @@ git init
 # Затем подключите:
 ```bash
 git remote add origin https://github.com/ВАШ_ЛОГИН/РЕПОЗИТОРИЙ.git
-git branch -M main  # Переименовать ветку в main
-git push -u origin main  # Первая отправка
+git branch -M master  # Переименовать ветку в master
+git push -u origin master  # Первая отправка
 ```
 
 🔄 4. ЕЖЕДНЕВНЫЙ РАБОЧИЙ ЦИКЛ (ВИТРИНА!)
@@ -41,7 +41,7 @@ git push -u origin main  # Первая отправка
 # 📍 Шаг 1: НАЧАЛО РАБОТЫ (всегда сначала!)
 ```bash
 git status                     # Проверить где я
-git pull origin main           # 🔥 ЗАБРАТЬ СВЕЖИЕ ИЗМЕНЕНИЯ!
+git pull origin master           # 🔥 ЗАБРАТЬ СВЕЖИЕ ИЗМЕНЕНИЯ!
 ```
 
 # 📍 Шаг 2: РАБОТА НАД КОДОМ
@@ -65,13 +65,13 @@ git commit -m "Описание: что сделано"
 
 # 📍 Шаг 5: ОТПРАВКА НА GITHUB
 ```
-git push origin main           # 🔥 ОТПРАВИТЬ ИЗМЕНЕНИЯ!
+git push origin master           # 🔥 ОТПРАВИТЬ ИЗМЕНЕНИЯ!
 ```
 ⚠️  ЗОЛОТОЕ ПРАВИЛО GIT:
 -----------------------
 ```bash
-ПЕРЕД работой → git pull origin main --- получить обновления с GitHub (если кто-то ещё работал)
-ПОСЛЕ работы  → git push origin main --- отправить свои изменения на GitHub
+ПЕРЕД работой → git pull origin master --- получить обновления с GitHub (если кто-то ещё работал)
+ПОСЛЕ работы  → git push origin master --- отправить свои изменения на GitHub
 ```
 📊 5. ПОЛЕЗНЫЕ КОМАНДЫ ДЛЯ ДИАГНОСТИКИ
 ---------------------------------------
@@ -117,16 +117,16 @@ git restore --staged файл.js
 ------------------------------------------------
 ```bash
 # Симптом: git push выдает ошибку:
-# ! [rejected] main -> main (non-fast-forward)
+# ! [rejected] master -> master (non-fast-forward)
 
 # РЕШЕНИЕ:
-git pull origin main          # 1. Забрать изменения
+git pull origin master          # 1. Забрать изменения
 # Если конфликт → разрешить (см. ниже)
-git push origin main          # 2. Отправить обратно
+git push origin master          # 2. Отправить обратно
 
 # Альтернатива (переместить ваши коммиты):
-git pull --rebase origin main
-git push origin main
+git pull --rebase origin master
+git push origin master
 ```
 
 ⚔️ 8. КОНФЛИКТЫ СЛИЯНИЯ
@@ -148,7 +148,7 @@ git push origin main
 5. Выполнить:
    git add имя_файла.js
    git commit -m "Разрешен конфликт"
-   git push origin main
+   git push origin master
 ```
 
 🌿 9. РАБОТА С ВЕТКАМИ
@@ -161,7 +161,7 @@ git checkout новая-фича      # Переключиться
 git checkout -b новая-фича   # Создать и переключиться
 
 # Слияние веток
-git checkout main            # Перейти в main
+git checkout master            # Перейти в master
 git merge новая-фича         # Влить изменения
 
 # Удаление ветки
@@ -187,24 +187,24 @@ dist/
 ```bash
 1. git status              # Все ли файлы добавлены?
 2. git log --oneline       # Правильные ли коммиты?
-3. git pull origin main    # Есть ли новые изменения на GitHub?
+3. git pull origin master    # Есть ли новые изменения на GitHub?
 4. Тесты проходят?         # Проверить работу кода
-5. git push origin main    # Отправить!
+5. git push origin master    # Отправить!
 ```
 
 🔧 12. ШПАРГАЛКА НА КАЖДЫЙ ДЕНЬ
 --------------------------------
 ```bash
 # УТРОМ:
-git pull origin main
+git pull origin master
 
 # В ТЕЧЕНИЕ ДНЯ (каждые 1-2 часа):
 git add .
 git commit -m "[тип]: описание"
-git push origin main
+git push origin master
 
 # ВЕЧЕРОМ:
-git push origin main  # Финальный пуш
+git push origin master  # Финальный пуш
 ```
 
 📝 13. ТИПЫ КОММИТОВ (по соглашению)
@@ -270,6 +270,7 @@ git config --global alias.lg "log --oneline --graph --all"
 - Решать типичные проблемы
 
 Happy coding! 🚀
+
 
 
 
