@@ -70,8 +70,8 @@ git push origin main           # 🔥 ОТПРАВИТЬ ИЗМЕНЕНИЯ!
 ⚠️  ЗОЛОТОЕ ПРАВИЛО GIT:
 -----------------------
 ```bash
-ПЕРЕД работой → git pull origin main
-ПОСЛЕ работы  → git push origin main
+ПЕРЕД работой → git pull origin main --- получить обновления с GitHub (если кто-то ещё работал)
+ПОСЛЕ работы  → git push origin main --- отправить свои изменения на GitHub
 ```
 📊 5. ПОЛЕЗНЫЕ КОМАНДЫ ДЛЯ ДИАГНОСТИКИ
 ---------------------------------------
@@ -270,6 +270,7 @@ git config --global alias.lg "log --oneline --graph --all"
 - Решать типичные проблемы
 
 Happy coding! 🚀
+
 
 
 
