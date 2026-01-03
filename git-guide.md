@@ -145,6 +145,16 @@ git checkout -- файл        # Восстановить файл
 git pull origin main        # Обновить локальную версию
 ```
 
+# 1. Добавить файл в отслеживание
+```bash
+git add README.md
+
+# 2. Создать коммит
+git commit -m "Добавлен README файл"
+
+# 3. Отправить на GitHub
+git push
+```
 ---
 
 ## ⚠ РЕШЕНИЕ ТИПИЧНЫХ ПРОБЛЕМ
@@ -204,6 +214,7 @@ git remote add origin https://github.com/АККАУНТ/РЕПОЗИТОРИЙ.g
 - Решать типичные проблемы
 
 Happy coding! 🚀
+
 
 
 
